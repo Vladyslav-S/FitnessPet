@@ -9,58 +9,21 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
-//    var coordinator: MainCoordinator?
+    var coordinator: MainCoordinator?
     var window: UIWindow?
-//    var appCoordinator: AppCoordinator!
+
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let navController = UINavigationController()
-        let coordinator = MainCoordinator(navigationController: navController)
+        coordinator = MainCoordinator(navigationController: navController)
 
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = navController
         window.makeKeyAndVisible()
         self.window = window
-        
-        coordinator.start()
-        
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
-//
-//        self.appCoordinator = AppCoordinator(with: self.window!)
-//        self.appCoordinator.start()
-       
-        
-//        // create the main navigation controller to be used for our app
-//        let navController = UINavigationController()
-//        // send that into our coordinator so that it can display view controllers
-//        coordinator = MainCoordinator(navigationController: navController)
-//        // tell the coordinator to take over control
-//        coordinator?.start()
-//        // create a basic UIWindow and activate it
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        window?.rootViewController = navController
-//        window?.makeKeyAndVisible()
-
-        
-        
-//        /// 1. Capture the scene
-//        guard let windowScene = (scene as? UIWindowScene) else { return }
-//
-//        /// 2. Create a new UIWindow using the windowScene constructor which takes in a window scene.
-//        let window = UIWindow(windowScene: windowScene)
-//
-//        /// 3. Create a view hierarchy programmatically
-//        let viewController = ViewController()
-//        let navigation = UINavigationController(rootViewController: viewController)
-//
-//        /// 4. Set the root view controller of the window with your view controller
-//        window.rootViewController = navigation
-//
-//        /// 5. Set the window and call makeKeyAndVisible()
-//        self.window = window
-//        window.makeKeyAndVisible()
+        coordinator?.start()
     
     }
     
