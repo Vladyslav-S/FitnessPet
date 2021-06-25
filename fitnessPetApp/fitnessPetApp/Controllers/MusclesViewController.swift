@@ -1,17 +1,14 @@
 //
-//  CreateAccountViewController.swift
+//  MusclesViewController.swift
 //  fitnessPetApp
 //
-//  Created by MACsimus on 23.06.2021.
+//  Created by MACsimus on 25.06.2021.
 //
 
 import UIKit
 
-class CreateAccountViewController: UIViewController, Storyboarded {
+class MusclesViewController: UIViewController {
 
-    
-    weak var coordinator: MainCoordinator?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

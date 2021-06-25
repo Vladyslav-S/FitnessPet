@@ -14,13 +14,10 @@ protocol Storyboarded {
 
 extension Storyboarded where Self: UIViewController {
     static func instantiate() -> Self {
-        
         // this pulls out "MyApp.MyViewController"
         let id = String(describing: self)
-
         // load our storyboard
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-
+        let storyboard = UIStoryboard(name: id, bundle: nil)
         // instantiate a view controller with that identifier, and force cast as the type that was requested
         return storyboard.instantiateViewController(withIdentifier: id) as! Self
     }
