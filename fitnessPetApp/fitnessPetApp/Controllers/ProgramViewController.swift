@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ProgramViewController: UIViewController {
+class ProgramViewController: UIViewController, Storyboarded {
 
+    weak var coordinator: MainCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

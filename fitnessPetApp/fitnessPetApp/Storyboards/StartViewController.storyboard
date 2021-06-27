@@ -40,17 +40,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="408.5"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
                                         <state key="normal" title="SUPERMAN"/>
-                                        <connections>
-                                            <action selector="sexChoosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P7R-7e-AP1"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZg-W7-ay5">
                                         <rect key="frame" x="0.0" y="409.5" width="414" height="408.5"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
                                         <state key="normal" title="SUPERWOMAN"/>
-                                        <connections>
-                                            <action selector="sexChoosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XtH-pd-pXG"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -67,8 +61,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="firstButton" destination="jWc-9E-scS" id="sYP-65-OSt"/>
-                        <outlet property="secondButton" destination="zZg-W7-ay5" id="EUp-gJ-TJI"/>
+                        <outlet property="manButton" destination="jWc-9E-scS" id="8Hl-3G-W8i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

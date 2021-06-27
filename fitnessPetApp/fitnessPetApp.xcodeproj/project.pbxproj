@@ -19,11 +19,11 @@
 		0071947026834A9A0088DA5A /* StartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0071946F26834A9A0088DA5A /* StartViewController.storyboard */; };
 		007B39C12684CE8D00CD5E55 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007B39C02684CE8D00CD5E55 /* HomeViewController.storyboard */; };
 		007B39C92684CEE000CD5E55 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39C82684CEE000CD5E55 /* HomeViewController.swift */; };
-		007B39D126854E7F00CD5E55 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39D026854E7F00CD5E55 /* ProfileCoordinator.swift */; };
-		007B39D426854E8F00CD5E55 /* ProgressCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39D326854E8F00CD5E55 /* ProgressCoordinator.swift */; };
-		007B39D726854E9B00CD5E55 /* ProgramCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39D626854E9B00CD5E55 /* ProgramCoordinator.swift */; };
-		007B39DA26854EED00CD5E55 /* MusclesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39D926854EED00CD5E55 /* MusclesCoordinator.swift */; };
-		007B39DD26854F0200CD5E55 /* CalculatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39DC26854F0200CD5E55 /* CalculatorCoordinator.swift */; };
+		007B39D126854E7F00CD5E55 /* MainCoordinator+Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39D026854E7F00CD5E55 /* MainCoordinator+Profile.swift */; };
+		007B39D426854E8F00CD5E55 /* MainCoordinator+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39D326854E8F00CD5E55 /* MainCoordinator+Progress.swift */; };
+		007B39D726854E9B00CD5E55 /* MainCoordinator+Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39D626854E9B00CD5E55 /* MainCoordinator+Program.swift */; };
+		007B39DA26854EED00CD5E55 /* MainCoordinator+Muscles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39D926854EED00CD5E55 /* MainCoordinator+Muscles.swift */; };
+		007B39DD26854F0200CD5E55 /* MainCoordinator+Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39DC26854F0200CD5E55 /* MainCoordinator+Calculator.swift */; };
 		007B39E026854F5800CD5E55 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39DF26854F5800CD5E55 /* ProfileViewController.swift */; };
 		007B39E326854F6D00CD5E55 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39E226854F6D00CD5E55 /* ProgressViewController.swift */; };
 		007B39E626854F7800CD5E55 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B39E526854F7800CD5E55 /* ProgramViewController.swift */; };
@@ -35,7 +35,13 @@
 		007B39F826854FC400CD5E55 /* MusclesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007B39F726854FC400CD5E55 /* MusclesViewController.storyboard */; };
 		007B39FB26854FCB00CD5E55 /* CalculatorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007B39FA26854FCB00CD5E55 /* CalculatorViewController.storyboard */; };
 		007B3A02268552C600CD5E55 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B3A01268552C600CD5E55 /* StartViewModel.swift */; };
-		007B3A05268552CF00CD5E55 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B3A04268552CF00CD5E55 /* ProfileViewModel.swift */; };
+		007B3A05268552CF00CD5E55 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B3A04268552CF00CD5E55 /* HomeViewModel.swift */; };
+		007B3A0A268556C400CD5E55 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B3A09268556C400CD5E55 /* BaseViewController.swift */; };
+		007B3A122685694200CD5E55 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B3A102685694200CD5E55 /* TableViewCell.swift */; };
+		007B3A132685694200CD5E55 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007B3A112685694200CD5E55 /* TableViewCell.xib */; };
+		007B3A19268603DD00CD5E55 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B3A18268603DD00CD5E55 /* ProfileViewModel.swift */; };
+		007B3A1C268603F800CD5E55 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B3A1B268603F800CD5E55 /* Profile.swift */; };
+		007B3A1F2686040100CD5E55 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B3A1E2686040100CD5E55 /* ProfileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,11 +59,11 @@
 		0071946F26834A9A0088DA5A /* StartViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StartViewController.storyboard; sourceTree = "<group>"; };
 		007B39C02684CE8D00CD5E55 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		007B39C82684CEE000CD5E55 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		007B39D026854E7F00CD5E55 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
-		007B39D326854E8F00CD5E55 /* ProgressCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCoordinator.swift; sourceTree = "<group>"; };
-		007B39D626854E9B00CD5E55 /* ProgramCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCoordinator.swift; sourceTree = "<group>"; };
-		007B39D926854EED00CD5E55 /* MusclesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusclesCoordinator.swift; sourceTree = "<group>"; };
-		007B39DC26854F0200CD5E55 /* CalculatorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorCoordinator.swift; sourceTree = "<group>"; };
+		007B39D026854E7F00CD5E55 /* MainCoordinator+Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Profile.swift"; sourceTree = "<group>"; };
+		007B39D326854E8F00CD5E55 /* MainCoordinator+Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Progress.swift"; sourceTree = "<group>"; };
+		007B39D626854E9B00CD5E55 /* MainCoordinator+Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Program.swift"; sourceTree = "<group>"; };
+		007B39D926854EED00CD5E55 /* MainCoordinator+Muscles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Muscles.swift"; sourceTree = "<group>"; };
+		007B39DC26854F0200CD5E55 /* MainCoordinator+Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Calculator.swift"; sourceTree = "<group>"; };
 		007B39DF26854F5800CD5E55 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		007B39E226854F6D00CD5E55 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		007B39E526854F7800CD5E55 /* ProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +75,13 @@
 		007B39F726854FC400CD5E55 /* MusclesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MusclesViewController.storyboard; sourceTree = "<group>"; };
 		007B39FA26854FCB00CD5E55 /* CalculatorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalculatorViewController.storyboard; sourceTree = "<group>"; };
 		007B3A01268552C600CD5E55 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
-		007B3A04268552CF00CD5E55 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		007B3A04268552CF00CD5E55 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		007B3A09268556C400CD5E55 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		007B3A102685694200CD5E55 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		007B3A112685694200CD5E55 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		007B3A18268603DD00CD5E55 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		007B3A1B268603F800CD5E55 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		007B3A1E2686040100CD5E55 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +116,10 @@
 			children = (
 				00719444268340920088DA5A /* AppDelegate.swift */,
 				00719446268340920088DA5A /* SceneDelegate.swift */,
-				007B3A07268552D600CD5E55 /* Models */,
+				00719460268344EB0088DA5A /* MainCoordinator.swift */,
+				007B3A272688E65500CD5E55 /* Start */,
+				007B3A212686040800CD5E55 /* Models */,
+				007B3A07268552D600CD5E55 /* ViewModels */,
 				007194812684A9A30088DA5A /* Protocols */,
 				007194662683463E0088DA5A /* Coordinators */,
 				007B39C32684CEB800CD5E55 /* Controllers */,
@@ -119,12 +134,11 @@
 		007194662683463E0088DA5A /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				00719460268344EB0088DA5A /* MainCoordinator.swift */,
-				007B39D026854E7F00CD5E55 /* ProfileCoordinator.swift */,
-				007B39D326854E8F00CD5E55 /* ProgressCoordinator.swift */,
-				007B39D626854E9B00CD5E55 /* ProgramCoordinator.swift */,
-				007B39D926854EED00CD5E55 /* MusclesCoordinator.swift */,
-				007B39DC26854F0200CD5E55 /* CalculatorCoordinator.swift */,
+				007B39D026854E7F00CD5E55 /* MainCoordinator+Profile.swift */,
+				007B39D326854E8F00CD5E55 /* MainCoordinator+Progress.swift */,
+				007B39D626854E9B00CD5E55 /* MainCoordinator+Program.swift */,
+				007B39D926854EED00CD5E55 /* MainCoordinator+Muscles.swift */,
+				007B39DC26854F0200CD5E55 /* MainCoordinator+Calculator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -149,6 +163,7 @@
 				007B39F426854FBD00CD5E55 /* ProgramViewController.storyboard */,
 				007B39F726854FC400CD5E55 /* MusclesViewController.storyboard */,
 				007B39FA26854FCB00CD5E55 /* CalculatorViewController.storyboard */,
+				007B3A152685694800CD5E55 /* Views */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -156,7 +171,7 @@
 		007B39C32684CEB800CD5E55 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				00719448268340920088DA5A /* StartViewController.swift */,
+				007B3A09268556C400CD5E55 /* BaseViewController.swift */,
 				007B39C82684CEE000CD5E55 /* HomeViewController.swift */,
 				007B39DF26854F5800CD5E55 /* ProfileViewController.swift */,
 				007B39E226854F6D00CD5E55 /* ProgressViewController.swift */,
@@ -167,13 +182,40 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		007B3A07268552D600CD5E55 /* Models */ = {
+		007B3A07268552D600CD5E55 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				007B3A18268603DD00CD5E55 /* ProfileViewModel.swift */,
+				007B3A04268552CF00CD5E55 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		007B3A152685694800CD5E55 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				007B3A102685694200CD5E55 /* TableViewCell.swift */,
+				007B3A112685694200CD5E55 /* TableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		007B3A212686040800CD5E55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				007B3A1B268603F800CD5E55 /* Profile.swift */,
+				007B3A1E2686040100CD5E55 /* ProfileManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		007B3A272688E65500CD5E55 /* Start */ = {
 			isa = PBXGroup;
 			children = (
 				007B3A01268552C600CD5E55 /* StartViewModel.swift */,
-				007B3A04268552CF00CD5E55 /* ProfileViewModel.swift */,
+				00719448268340920088DA5A /* StartViewController.swift */,
 			);
-			path = Models;
+			path = Start;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				007B39EF26854FAB00CD5E55 /* ProfileViewController.storyboard in Resources */,
+				007B3A132685694200CD5E55 /* TableViewCell.xib in Resources */,
 				007B39FB26854FCB00CD5E55 /* CalculatorViewController.storyboard in Resources */,
 				007B39F526854FBD00CD5E55 /* ProgramViewController.storyboard in Resources */,
 				0071947026834A9A0088DA5A /* StartViewController.storyboard in Resources */,
@@ -253,25 +296,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				007B39E626854F7800CD5E55 /* ProgramViewController.swift in Sources */,
+				007B3A1F2686040100CD5E55 /* ProfileManager.swift in Sources */,
+				007B3A1C268603F800CD5E55 /* Profile.swift in Sources */,
 				0071946A268348570088DA5A /* Coordinator.swift in Sources */,
 				0071944F268340920088DA5A /* fitnessPetApp.xcdatamodeld in Sources */,
-				007B39DA26854EED00CD5E55 /* MusclesCoordinator.swift in Sources */,
+				007B39DA26854EED00CD5E55 /* MainCoordinator+Muscles.swift in Sources */,
 				00719461268344EB0088DA5A /* MainCoordinator.swift in Sources */,
+				007B3A0A268556C400CD5E55 /* BaseViewController.swift in Sources */,
 				00719449268340920088DA5A /* StartViewController.swift in Sources */,
 				007B39C92684CEE000CD5E55 /* HomeViewController.swift in Sources */,
 				0071946D268348840088DA5A /* Storyboarded.swift in Sources */,
-				007B39DD26854F0200CD5E55 /* CalculatorCoordinator.swift in Sources */,
-				007B39D726854E9B00CD5E55 /* ProgramCoordinator.swift in Sources */,
+				007B39DD26854F0200CD5E55 /* MainCoordinator+Calculator.swift in Sources */,
+				007B39D726854E9B00CD5E55 /* MainCoordinator+Program.swift in Sources */,
 				00719445268340920088DA5A /* AppDelegate.swift in Sources */,
 				007B39E326854F6D00CD5E55 /* ProgressViewController.swift in Sources */,
 				007B39EC26854F8F00CD5E55 /* CalculatorViewController.swift in Sources */,
 				007B39E926854F8500CD5E55 /* MusclesViewController.swift in Sources */,
-				007B3A05268552CF00CD5E55 /* ProfileViewModel.swift in Sources */,
+				007B3A19268603DD00CD5E55 /* ProfileViewModel.swift in Sources */,
+				007B3A05268552CF00CD5E55 /* HomeViewModel.swift in Sources */,
 				007B3A02268552C600CD5E55 /* StartViewModel.swift in Sources */,
-				007B39D126854E7F00CD5E55 /* ProfileCoordinator.swift in Sources */,
+				007B3A122685694200CD5E55 /* TableViewCell.swift in Sources */,
+				007B39D126854E7F00CD5E55 /* MainCoordinator+Profile.swift in Sources */,
 				007B39E026854F5800CD5E55 /* ProfileViewController.swift in Sources */,
 				00719447268340920088DA5A /* SceneDelegate.swift in Sources */,
-				007B39D426854E8F00CD5E55 /* ProgressCoordinator.swift in Sources */,
+				007B39D426854E8F00CD5E55 /* MainCoordinator+Progress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

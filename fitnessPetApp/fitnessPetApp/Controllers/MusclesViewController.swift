@@ -7,8 +7,10 @@
 
 import UIKit
 
-class MusclesViewController: UIViewController {
+class MusclesViewController: UIViewController, Storyboarded {
 
+    weak var coordinator: MainCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

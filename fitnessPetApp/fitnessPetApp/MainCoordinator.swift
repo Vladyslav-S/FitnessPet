@@ -20,17 +20,14 @@ class MainCoordinator: Coordinator {
 
     func start() {
         let vc = StartViewController.instantiate()
-        vc.coordinator = self
+        vc.viewModel = StartViewModel(coordinator: self)
         navigationController.pushViewController(vc, animated: false)
     }
     
     func choosenCharacter() {
         let vc =  HomeViewController.instantiate()
+//        vc.sexLabel.text =
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
-    }
-    
-    func home() {
-//        let vc = 
     }
 }
